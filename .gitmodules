@@ -1,0 +1,24 @@
+[submodule "eureka_server"]
+	path = eureka_server
+	url = https://github.com/Microservicios-y-cloud/eureka_server.git
+[submodule "order_management_microservice"]
+	path = order_management_microservice
+	url = https://github.com/Microservicios-y-cloud/order_management_microservice.git
+[submodule "payment_microservice"]
+	path = payment_microservice
+	url = https://github.com/Microservicios-y-cloud/payment_microservice.git
+[submodule "service_catalog_microservice"]
+	path = service_catalog_microservice
+	url = https://github.com/Microservicios-y-cloud/service_catalog_microservice.git
+[submodule "service_publication_microservice"]
+	path = service_publication_microservice
+	url = https://github.com/Microservicios-y-cloud/service_publication_microservice.git
+[submodule "service_rating_microservice"]
+	path = service_rating_microservice
+	url = https://github.com/Microservicios-y-cloud/service_rating_microservice.git
+[submodule "users_auth_microservice"]
+	path = users_auth_microservice
+	url = https://github.com/Microservicios-y-cloud/users_auth_microservice.git
+[submodule "gateway_server"]
+	path = gateway_server
+	url = https://github.com/Microservicios-y-cloud/gateway_server.git
