@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<eureka_server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.eureka_server.EurekaServerApplication",
+      "projectName": "eureka_server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServicePublicationMicroserviceApplication<service_publication_microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.service_publication_microservice.ServicePublicationMicroserviceApplication",
+      "projectName": "service_publication_microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayServerApplication<gateway_server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.gateway_server.GatewayServerApplication",
+      "projectName": "gateway_server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
