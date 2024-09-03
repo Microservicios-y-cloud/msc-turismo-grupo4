@@ -16,9 +16,6 @@
 [submodule "service_rating_microservice"]
 	path = service_rating_microservice
 	url = https://github.com/Microservicios-y-cloud/service_rating_microservice.git
-[submodule "users_auth_microservice"]
-	path = users_auth_microservice
-	url = https://github.com/Microservicios-y-cloud/users_auth_microservice.git
 [submodule "gateway_server"]
 	path = gateway_server
 	url = https://github.com/Microservicios-y-cloud/gateway_server.git
