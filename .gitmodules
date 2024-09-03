@@ -19,3 +19,6 @@
 [submodule "gateway_server"]
 	path = gateway_server
 	url = https://github.com/Microservicios-y-cloud/gateway_server.git
+[submodule "keycloak-25.0.4"]
+	path = keycloak-25.0.4
+	url = https://github.com/Microservicios-y-cloud/keycloak-25.0.4.git
