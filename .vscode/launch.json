@@ -8,7 +8,8 @@
       "mainClass": "co.edu.javeriana.msc.turismo.eureka_server.EurekaServerApplication",
       "projectName": "eureka_server",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57656 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka_server"
     },
     {
       "type": "java",
@@ -18,7 +19,8 @@
       "mainClass": "co.edu.javeriana.msc.turismo.service_publication_microservice.ServicePublicationMicroserviceApplication",
       "projectName": "service_publication_microservice",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58352 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service_publication_microservice"
     },
     {
       "type": "java",
@@ -27,6 +29,57 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "co.edu.javeriana.msc.turismo.gateway_server.GatewayServerApplication",
       "projectName": "gateway_server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigServerApplication<config-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.config_server.ConfigServerApplication",
+      "projectName": "config-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58313 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrderManagementMicroserviceApplication<order_management_microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.order_management_microservice.OrderManagementMicroserviceApplication",
+      "projectName": "order_management_microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PaymentMicroserviceApplication<payment_microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.payment_microservice.PaymentMicroserviceApplication",
+      "projectName": "payment_microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceRatingMicroserviceApplication<service_rating_microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.service_rating_microservice.ServiceRatingMicroserviceApplication",
+      "projectName": "service_rating_microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-UsersAuthMicroserviceApplication<users_auth_microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.users_auth_microservice.UsersAuthMicroserviceApplication",
+      "projectName": "users_auth_microservice",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
