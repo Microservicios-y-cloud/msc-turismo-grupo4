@@ -1,15 +1,9 @@
 [submodule "eureka_server"]
 	path = eureka_server
 	url = https://github.com/Microservicios-y-cloud/eureka_server.git
-[submodule "order_management_microservice"]
-	path = order_management_microservice
-	url = https://github.com/Microservicios-y-cloud/order_management_microservice.git
 [submodule "payment_microservice"]
 	path = payment_microservice
 	url = https://github.com/Microservicios-y-cloud/payment_microservice.git
-[submodule "service_catalog_microservice"]
-	path = service_catalog_microservice
-	url = https://github.com/Microservicios-y-cloud/service_catalog_microservice.git
 [submodule "service_publication_microservice"]
 	path = service_publication_microservice
 	url = https://github.com/Microservicios-y-cloud/service_publication_microservice.git
@@ -22,3 +16,9 @@
 [submodule "keycloak-25.0.4"]
 	path = keycloak-25.0.4
 	url = https://github.com/Microservicios-y-cloud/keycloak-25.0.4.git
+[submodule "users_auth_microservice"]
+	path = users_auth_microservice
+	url = https://github.com/Microservicios-y-cloud/users_auth_microservice.git
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/Microservicios-y-cloud/config-server.git
