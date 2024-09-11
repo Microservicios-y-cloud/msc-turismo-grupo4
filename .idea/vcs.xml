@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/config-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/eureka_server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gateway_server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/keycloak-25.0.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/payment_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/service_publication_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/service_rating_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/users_auth_microservice" vcs="Git" />
+  </component>
+</project>

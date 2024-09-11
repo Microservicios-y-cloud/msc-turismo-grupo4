@@ -16,9 +16,6 @@
 [submodule "keycloak-25.0.4"]
 	path = keycloak-25.0.4
 	url = https://github.com/Microservicios-y-cloud/keycloak-25.0.4.git
-[submodule "users_auth_microservice"]
-	path = users_auth_microservice
-	url = https://github.com/Microservicios-y-cloud/users_auth_microservice.git
 [submodule "config-server"]
 	path = config-server
 	url = https://github.com/Microservicios-y-cloud/config-server.git
