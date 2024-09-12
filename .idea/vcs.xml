@@ -9,6 +9,5 @@
     <mapping directory="$PROJECT_DIR$/payment_microservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service_publication_microservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service_rating_microservice" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/users_auth_microservice" vcs="Git" />
   </component>
 </project>
