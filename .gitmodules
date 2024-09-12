@@ -19,3 +19,9 @@
 [submodule "config-server"]
 	path = config-server
 	url = https://github.com/Microservicios-y-cloud/config-server.git
+[submodule "order_management_microservice"]
+	path = order_management_microservice
+	url = https://github.com/Microservicios-y-cloud/order_management_microservice.git
+[submodule "notification"]
+	path = notification
+	url = https://github.com/Microservicios-y-cloud/notification.git
