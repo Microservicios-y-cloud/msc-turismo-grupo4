@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="notification" />
         <module name="service_publication_microservice" />
         <module name="gateway_server" />
         <module name="payment_microservice" />
         <module name="eureka_server" />
+        <module name="order_management_microservice" />
         <module name="service_rating_microservice" />
       </profile>
     </annotationProcessing>
@@ -24,6 +26,8 @@
       <module name="config-server" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
       <module name="gateway_server" options="-parameters" />
+      <module name="notification" options="-parameters" />
+      <module name="order_management_microservice" options="-parameters" />
       <module name="payment_microservice" options="-parameters" />
       <module name="service_publication_microservice" options="-parameters" />
       <module name="service_rating_microservice" options="-parameters" />

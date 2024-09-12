@@ -6,6 +6,8 @@
     <mapping directory="$PROJECT_DIR$/eureka_server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gateway_server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/keycloak-25.0.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/notification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/order_management_microservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/payment_microservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service_publication_microservice" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service_rating_microservice" vcs="Git" />
