@@ -30,7 +30,8 @@
       "mainClass": "co.edu.javeriana.msc.turismo.gateway_server.GatewayServerApplication",
       "projectName": "gateway_server",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62752 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway_server"
     },
     {
       "type": "java",
@@ -80,6 +81,26 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "co.edu.javeriana.msc.turismo.users_auth_microservice.UsersAuthMicroserviceApplication",
       "projectName": "users_auth_microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-NotificationApplication<notification>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.notification.NotificationApplication",
+      "projectName": "notification",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrderManagementMicroserviceApplication<order-management-microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.order_management_microservice.OrderManagementMicroserviceApplication",
+      "projectName": "order-management-microservice",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
