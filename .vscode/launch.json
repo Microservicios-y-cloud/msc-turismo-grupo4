@@ -103,6 +103,16 @@
       "projectName": "order-management-microservice",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceQueryMicroserviceApplication<service-query-microservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.edu.javeriana.msc.turismo.service_query_microservice.ServiceQueryMicroserviceApplication",
+      "projectName": "service-query-microservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
