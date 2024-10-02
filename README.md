@@ -32,7 +32,11 @@ git submodule update
 3. inicializar desde la extensión primero config-server
 4. Inicializar los demás servicios
 
+## Historias de usuario
+### Link: https://docs.google.com/document/d/1AuXA7oklvI9T2SzBfv9hUQvsC7KEiy8zRfKN6rRYDDo/edit?usp=sharing
+
 ## Diagramas
+### Link: https://lucid.app/lucidchart/b86b097d-f3db-4712-8977-6b2767f2ba59/edit?viewport_loc=2570%2C-64%2C2500%2C1024%2C7Vy9Px8OXLNV&invitationId=inv_460007cd-89a0-4f22-987c-66b1a09df58d
 ### Diagrama de datos
 ![MSC-Diagramas - Diagrama ER (1)](https://github.com/user-attachments/assets/4c21a7f8-5e70-4aeb-a93c-5c34988910b0)
 ### Diagrama de clases
