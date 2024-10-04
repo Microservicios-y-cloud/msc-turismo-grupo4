@@ -15,7 +15,39 @@ git submodule init
 git submodule update
 ```
 
-## Como levantar los microservicios (posteriormente esto se hará automático con Docker)
+## Instrucciones de Docker
+1. Asegurarse de contenerizar la version del proyecto correcta:
+```bash
+mvn clean
+```
+```bash
+mvn install
+```
+
+2. Construir el contenedor
+    ```bash
+    docker build -t {nombre_del_contenedor} .
+    ```
+
+3. Correr el contenedor
+    ```bash
+    docker build -t {nombre_del_contenedor} .
+    ```
+
+Asegurate de borrar los contenedores que no utilices, o que esten desactualizados, el siguiente comando borra un solo contenedor:
+
+```bash
+docker rm -f <containerId/Name>
+```
+
+El siguiente comando borra todos los contenedores:
+
+```bash
+docker rm $(docker ps -aq)
+```
+
+
+## Como levantar los microservicios
 
 ### Por terminal
  - El comando para inicializar es el siguiente:
