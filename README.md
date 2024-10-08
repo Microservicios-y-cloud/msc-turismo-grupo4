@@ -31,7 +31,7 @@ mvn install
 
 3. Correr el contenedor
     ```bash
-    docker build -t {nombre_del_contenedor} .
+    docker run -p port:port {nombre_del_contenedor} .
     ```
 
 Asegurate de borrar los contenedores que no utilices, o que esten desactualizados, el siguiente comando borra un solo contenedor:
