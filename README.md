@@ -78,5 +78,6 @@ docker rm $(docker ps -aq)
 ### Diagrama de despliegue
 ![MSC-Diagramas - Diagrama Despliegue](https://github.com/user-attachments/assets/6a506c12-9497-4167-bd44-79888095c8fa)
 ### Diagrama de arquitectura
-![Animation](https://github.com/user-attachments/assets/e3c875e3-abcb-449b-bad1-bc02d4ec80ad)
+![Animation2](https://github.com/user-attachments/assets/923b3b80-f76c-4849-b761-b46d4dc0eea0)
+
 
