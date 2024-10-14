@@ -1,0 +1,29 @@
+version: '2'
+services:
+  config-server:
+    build: config-server
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    networks:
+      - application-network
+
+  eureka-server:
+    build: eureka_server
+    container_name: eureka_server
+    ports:
+      - "8761:8761"
+    networks:
+      - application-network
+
+  gateway-server:
+    build: gateway_server
+    container_name: gateway_server
+    ports:
+      - "8080:8080"
+    networks:
+      - application-network
+
+networks:
+  application-network:
+    driver: bridge
