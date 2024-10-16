@@ -1,5 +1,49 @@
-version: '2'
+version: '2'  # Aquí definimos la versión correcta del Compose
+
 services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest  # Usar la imagen de Zookeeper, no de Kafka
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      - ZOOKEEPER_SERVER_ID=1
+      - ZOOKEEPER_CLIENT_PORT=2181
+      - ZOOKEEPER_TICK_TIME=2000
+    networks:
+      - application-network
+  
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    environment:
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+      - KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1
+      - KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+    networks:
+      - application-network
+
+  keycloak:
+    build: keycloak-config  # Se refiere al Dockerfile en el directorio keycloak-config
+    container_name: keycloak_unoptimized
+    ports:
+      - "9000:9000"
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+    volumes:
+      - ./keycload-config/msc-keycloack.json:/opt/keycloak/data/import  # Montar archivo local para la importación de realms
+    command:
+      - start-dev
+      - --import-realm  # Importar realm durante el arranque
+
   config-server:
     build: config-server
     container_name: config-server
@@ -23,7 +67,11 @@ services:
       - "8080:8080"
     networks:
       - application-network
+  
 
 networks:
   application-network:
     driver: bridge
+
+volumes:
+  keycload-config:
